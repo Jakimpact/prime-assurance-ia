@@ -18,7 +18,7 @@ a = data.loc[data[['bmi', 'age', 'charges']].duplicated(keep=False),:]
 print(a)
 
 # On supprime les doublons
-data.drop_duplicates(subset=['bmi', 'age', 'charge'], inplace=True, ignore_index=True)
+data.drop_duplicates(subset=['bmi', 'age', 'charges'], inplace=True, ignore_index=True)
 
 # On cherche ensuite à trouver les outliers
 print(data.describe())
