@@ -7,6 +7,8 @@ modalities = {
     "age": [18, 100],
     "sex": ["male", "female"],
     "bmi": [15.00, 70.00],
+    "height": [0.70, 2.50],
+    "weight": [30.0, 200.0],
     "children": [0, 20],
     "smoker": ["yes", "no"],
     "region": ["northwest", "northeast", "southwest", "southeast"],
@@ -54,6 +56,24 @@ answers["bmi"] = st.number_input(
     step=0.01,
 )
 
+st.write("If you don't know the bmi, fill the height and weight inputs.")
+
+height = st.number_input(
+    "Height:",
+    min_value=modalities["height"][0],
+    max_value=modalities["height"][1],
+    value=None,
+    step=0.01,
+)
+
+weight = st.number_input(
+    "Weight:",
+    min_value=modalities["weight"][0],
+    max_value=modalities["weight"][1],
+    value=None,
+    step=0.1,
+)
+
 answers["children"] = st.number_input(
     "Number of children:",
     min_value=modalities["children"][0],
@@ -79,6 +99,12 @@ if st.button("Predict", type="primary"):
     for answer in answers:
         stop = False
         if answers[answer] == None:
+
+            if answer == "bmi":
+                if (height and weight) != None:
+                    answers[answer] = weight / (height*2)
+                    continue
+
             st.error(f"Missing answer for : {answer}")
             stop = True
         if stop:
