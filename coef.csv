@@ -1,0 +1,154 @@
+,Coefficients
+one_hot__smoker_yes one_hot__bmi_Obesity class III,19336.583053395916
+one_hot__smoker_yes one_hot__bmi_Obesity class II,18089.166677609
+one_hot__smoker_yes one_hot__bmi_Obesity class I,15851.297224849193
+one_hot__smoker_no,-14230.71465977951
+scaling__age,3475.600484267216
+one_hot__smoker_yes one_hot__bmi_Healthy weight,-2093.9706855888458
+scaling__age^2,772.4731127228013
+one_hot__region_southwest,-658.0390031923255
+one_hot__region_northeast one_hot__bmi_Obesity class II,488.99856144905146
+one_hot__smoker_no one_hot__region_northeast,487.98845566354686
+scaling__children,455.7259506946972
+one_hot__sex_male one_hot__smoker_no,-446.6824235696245
+one_hot__bmi_Obesity class II,402.49360624995467
+one_hot__region_southeast scaling__age,377.386980853434
+one_hot__smoker_no scaling__children,331.1804771153817
+one_hot__smoker_no^2,-300.94317191833704
+one_hot__region_northwest scaling__children,288.39664812228864
+one_hot__smoker_no one_hot__region_southeast,-242.9598392191512
+one_hot__region_southeast one_hot__bmi_Obesity class I,221.5723513665573
+one_hot__bmi_Overweight scaling__children,198.7538006354815
+one_hot__sex_female one_hot__bmi_Obesity class I,164.23962805097048
+one_hot__bmi_Obesity class II scaling__children,155.8392998500555
+one_hot__region_northeast scaling__children,133.40834610069686
+scaling__children^2,-92.71390097891857
+one_hot__bmi_Overweight scaling__age,87.05453983601842
+one_hot__region_southeast one_hot__bmi_Overweight,-61.9214400491378
+one_hot__bmi_Healthy weight scaling__children,-54.675629678652875
+one_hot__smoker_no one_hot__bmi_Obesity class III,-45.685948849499674
+one_hot__bmi_Obesity class I scaling__children,41.98159815931635
+one_hot__region_southwest scaling__children,-28.526610245027246
+one_hot__smoker_yes^2,25.550026789438913
+one_hot__sex_male scaling__children,15.411737555083672
+scaling__age scaling__children,5.154263365304414
+one_hot__region_southwest^2,-3.413034718602867
+one_hot__bmi_Obesity class II^2,1.260244054632267
+one_hot__region_southeast one_hot__bmi_Underweight,0.0
+one_hot__region_northwest one_hot__region_southeast,0.0
+one_hot__region_southeast scaling__children,-0.0
+one_hot__region_southeast^2,-0.0
+one_hot__region_southwest one_hot__bmi_Healthy weight,-0.0
+one_hot__region_northwest one_hot__region_southwest,0.0
+one_hot__region_southeast one_hot__region_southwest,0.0
+one_hot__region_northwest one_hot__bmi_Healthy weight,-0.0
+one_hot__region_southeast one_hot__bmi_Healthy weight,0.0
+one_hot__region_northwest scaling__age,-0.0
+one_hot__region_southeast one_hot__bmi_Obesity class II,-0.0
+one_hot__region_northwest one_hot__bmi_Obesity class I,0.0
+one_hot__region_northwest one_hot__bmi_Obesity class II,0.0
+one_hot__region_northwest one_hot__bmi_Obesity class III,-0.0
+one_hot__region_northwest one_hot__bmi_Overweight,-0.0
+one_hot__region_northwest one_hot__bmi_Underweight,0.0
+one_hot__region_southwest one_hot__bmi_Obesity class I,-0.0
+one_hot__region_southeast one_hot__bmi_Obesity class III,0.0
+one_hot__bmi_Healthy weight^2,-0.0
+one_hot__region_southwest one_hot__bmi_Obesity class II,-0.0
+one_hot__region_southwest one_hot__bmi_Obesity class III,-0.0
+one_hot__bmi_Underweight scaling__children,-0.0
+one_hot__bmi_Underweight scaling__age,0.0
+one_hot__bmi_Underweight^2,-0.0
+one_hot__bmi_Overweight one_hot__bmi_Underweight,0.0
+one_hot__bmi_Overweight^2,-0.0
+one_hot__bmi_Obesity class III scaling__children,-0.0
+one_hot__bmi_Obesity class III scaling__age,0.0
+one_hot__bmi_Obesity class III one_hot__bmi_Underweight,0.0
+one_hot__bmi_Obesity class III one_hot__bmi_Overweight,0.0
+one_hot__bmi_Obesity class III^2,0.0
+one_hot__bmi_Obesity class II scaling__age,-0.0
+one_hot__bmi_Obesity class II one_hot__bmi_Underweight,0.0
+one_hot__bmi_Obesity class II one_hot__bmi_Overweight,0.0
+one_hot__bmi_Obesity class II one_hot__bmi_Obesity class III,0.0
+one_hot__bmi_Obesity class I scaling__age,-0.0
+one_hot__bmi_Obesity class I one_hot__bmi_Underweight,0.0
+one_hot__bmi_Obesity class I one_hot__bmi_Overweight,0.0
+one_hot__bmi_Obesity class I one_hot__bmi_Obesity class III,0.0
+one_hot__bmi_Obesity class I one_hot__bmi_Obesity class II,0.0
+one_hot__bmi_Obesity class I^2,0.0
+one_hot__bmi_Healthy weight scaling__age,-0.0
+one_hot__bmi_Healthy weight one_hot__bmi_Underweight,0.0
+one_hot__bmi_Healthy weight one_hot__bmi_Overweight,0.0
+one_hot__bmi_Healthy weight one_hot__bmi_Obesity class III,0.0
+one_hot__bmi_Healthy weight one_hot__bmi_Obesity class II,0.0
+one_hot__bmi_Healthy weight one_hot__bmi_Obesity class I,0.0
+one_hot__region_southwest scaling__age,0.0
+one_hot__region_southwest one_hot__bmi_Underweight,-0.0
+one_hot__region_southwest one_hot__bmi_Overweight,0.0
+one_hot__region_northwest^2,0.0
+1,0.0
+one_hot__region_northeast scaling__age,-0.0
+one_hot__sex_female one_hot__region_northwest,-0.0
+one_hot__sex_male one_hot__region_southeast,-0.0
+one_hot__sex_male one_hot__region_northwest,0.0
+one_hot__sex_male one_hot__region_northeast,-0.0
+one_hot__sex_male one_hot__smoker_yes,0.0
+one_hot__sex_male^2,-0.0
+one_hot__sex_female scaling__children,-0.0
+one_hot__sex_female scaling__age,0.0
+one_hot__sex_female one_hot__bmi_Underweight,-0.0
+one_hot__sex_female one_hot__bmi_Overweight,-0.0
+one_hot__sex_female one_hot__bmi_Obesity class III,0.0
+one_hot__sex_female one_hot__bmi_Obesity class II,0.0
+one_hot__sex_female one_hot__bmi_Healthy weight,-0.0
+one_hot__sex_female one_hot__region_southwest,-0.0
+one_hot__sex_female one_hot__region_southeast,0.0
+one_hot__sex_female one_hot__region_northeast,0.0
+one_hot__region_northeast one_hot__bmi_Underweight,-0.0
+one_hot__sex_female one_hot__smoker_yes,0.0
+one_hot__sex_female one_hot__smoker_no,0.0
+one_hot__sex_female one_hot__sex_male,0.0
+one_hot__sex_female^2,0.0
+one_hot__bmi_Underweight,-0.0
+one_hot__bmi_Overweight,-0.0
+one_hot__bmi_Obesity class III,0.0
+one_hot__bmi_Obesity class I,0.0
+one_hot__bmi_Healthy weight,-0.0
+one_hot__region_southeast,-0.0
+one_hot__region_northwest,0.0
+one_hot__region_northeast,0.0
+one_hot__smoker_yes,0.0
+one_hot__sex_male,-0.0
+one_hot__sex_male one_hot__region_southwest,-0.0
+one_hot__sex_male one_hot__bmi_Healthy weight,-0.0
+one_hot__sex_male one_hot__bmi_Obesity class I,-0.0
+one_hot__sex_male one_hot__bmi_Obesity class II,0.0
+one_hot__region_northeast one_hot__bmi_Overweight,0.0
+one_hot__region_northeast one_hot__bmi_Obesity class III,0.0
+one_hot__region_northeast one_hot__bmi_Obesity class I,0.0
+one_hot__region_northeast one_hot__bmi_Healthy weight,-0.0
+one_hot__region_northeast one_hot__region_southwest,0.0
+one_hot__region_northeast one_hot__region_southeast,0.0
+one_hot__sex_female,0.0
+one_hot__region_northeast^2,0.0
+one_hot__smoker_yes scaling__children,-0.0
+one_hot__smoker_yes scaling__age,0.0
+one_hot__smoker_yes one_hot__bmi_Underweight,-0.0
+one_hot__smoker_yes one_hot__bmi_Overweight,-0.0
+one_hot__smoker_yes one_hot__region_southwest,-0.0
+one_hot__smoker_yes one_hot__region_southeast,0.0
+one_hot__smoker_yes one_hot__region_northwest,0.0
+one_hot__smoker_yes one_hot__region_northeast,-0.0
+one_hot__smoker_no scaling__age,0.0
+one_hot__smoker_no one_hot__bmi_Underweight,-0.0
+one_hot__smoker_no one_hot__bmi_Overweight,0.0
+one_hot__smoker_no one_hot__bmi_Obesity class II,0.0
+one_hot__smoker_no one_hot__bmi_Obesity class I,-0.0
+one_hot__smoker_no one_hot__bmi_Healthy weight,0.0
+one_hot__smoker_no one_hot__region_southwest,-0.0
+one_hot__smoker_no one_hot__region_northwest,-0.0
+one_hot__smoker_no one_hot__smoker_yes,0.0
+one_hot__sex_male scaling__age,0.0
+one_hot__sex_male one_hot__bmi_Underweight,-0.0
+one_hot__sex_male one_hot__bmi_Overweight,0.0
+one_hot__sex_male one_hot__bmi_Obesity class III,-0.0
+one_hot__region_northeast one_hot__region_northwest,0.0
