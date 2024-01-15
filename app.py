@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
 
@@ -9,6 +8,8 @@ modalities = {
     "age": [18, 100],
     "sex": ["male", "female"],
     "bmi": [15.00, 70.00],
+    "height": [0.70, 2.50],
+    "weight": [30.0, 200.0],
     "children": [0, 20],
     "smoker": ["yes", "no"],
     "region": ["northwest", "northeast", "southwest", "southeast"],
@@ -51,15 +52,15 @@ if menu == "Accueil":
         value = st.slider("Filtrer les données selon l'age",18,65)
         data = data.loc[data["age"]<=value]
         fig,ax = plt.subplots(figsize=(10,5))
-        sns.scatterplot(data=data , x="bmi", y="charges",hue="smoker")
+        sns.scatterplot(data=data , x="bmi", y="charges",hue="smoker").set(title="Charges en fonction de l'IMC")
         st.pyplot(fig)
     if graph == "Diagramme de barres":
         fig,ax = plt.subplots(figsize=(5,3))
-        sns.barplot(x="smoker",y="charges",data=data)
+        sns.barplot(x="smoker",y="charges",data=data).set(title="Moyenne des charges pour les fumeurs et non fumeurs")
         st.pyplot(fig)
     if graph == "Histogramme":
         fig,ax = plt.subplots(figsize=(5,3))
-        sns.displot(data,x="smoker",y="charges")
+        sns.histplot(data=data, x="bmi", kde=True, color="darkgreen").set(title="Répartition des individus selon l'IMC")
         st.pyplot(fig)
 
 if menu == "Prédiction d'assurance":
@@ -84,6 +85,23 @@ if menu == "Prédiction d'assurance":
             value=None,
             step=0.01,
         )
+
+        st.write("Si vous ne connaissez pas votre IMC, veuillez remplir votre taille et votre poids.")
+
+        form["height"] = st.number_input(
+            "Taille (en m):",
+            min_value=modalities["height"][0],
+            max_value=modalities["height"][1],
+            value=None,
+            step=0.01,
+        )
+        form["weight"] = st.number_input(
+            "Poids (en kg):",
+            min_value=modalities["weight"][0],
+            max_value=modalities["weight"][1],
+            value=None,
+            step=0.1,
+        )
         form["children"] = st.number_input(
             "Nombre d'enfants:",
             min_value=modalities["children"][0],
@@ -106,6 +124,11 @@ if menu == "Prédiction d'assurance":
             for answer in form:
                 stop = False
                 if form[answer] == None:
+                    if answer == "bmi":
+                        if (form["height"] and form["weight"]) != None:
+                            form[answer] = form["weight"] / (form["height"]*2)
+                            continue
+
                     st.error(f"Missing answer for : {answer}")
                     stop = True
                 if stop:
