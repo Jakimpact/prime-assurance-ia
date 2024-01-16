@@ -89,14 +89,14 @@ if menu == "Prédiction d'assurance":
 
         st.write("Si vous ne connaissez pas votre IMC, veuillez remplir votre taille et votre poids.")
 
-        form["height"] = st.number_input(
+        height = st.number_input(
             "Taille (en m):",
             min_value=modalities["height"][0],
             max_value=modalities["height"][1],
             value=None,
             step=0.01,
         )
-        form["weight"] = st.number_input(
+        weight = st.number_input(
             "Poids (en kg):",
             min_value=modalities["weight"][0],
             max_value=modalities["weight"][1],
@@ -126,8 +126,8 @@ if menu == "Prédiction d'assurance":
                 stop = False
                 if form[answer] == None:
                     if answer == "bmi":
-                        if (form["height"] and form["weight"]) != None:
-                            form[answer] = form["weight"] / (form["height"]*2)
+                        if (height and weight) != None:
+                            form[answer] = weight / (height*2)
                             continue
 
                     st.error(f"Missing answer for : {answer}")
@@ -146,5 +146,5 @@ if menu == "Prédiction d'assurance":
                 charges = model.predict(df)[0]
 
                 st.divider()
-                st.write("$", str(charges))
+                st.write("Montant des charges : $", str(charges))
 
