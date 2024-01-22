@@ -25,7 +25,7 @@ bmi_scale = [
     {"category": "Obesity class III", "range": [40, float("inf")]},
     ]
 
-with open("model.pkl", "rb") as file:
+with open("modele.pkl", "rb") as file:
     model = pickle.load(file)
 file.close()
 
